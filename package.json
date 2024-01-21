@@ -1,0 +1,52 @@
+{
+	"name": "abcventures",
+	"version": "1.0.0",
+	"description": "This is a WordPress Block theme built with Tailwind CSS with full Gutenberg support.",
+	"author": "Web Falcon",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/username/abcventures"
+	},
+	"theme_uri": "https://github.com/username/abcventures",
+	"author_uri": "https://webfalcon.me",
+	"text_domain": "abcventures",
+	"license": "MIT",
+	"scripts": {
+		"production:css-normalizer": "cross-env NODE_ENV=production tailwindcss -i ./resources/css/wordpress-normalizer.css -o ./assets/css/wordpress-normalizer.css --postcss --minify",
+		"production:css-app": "cross-env NODE_ENV=production tailwindcss -i ./resources/css/app.css -o ./assets/css/app.css --postcss --minify",
+		"production:js": "cross-env NODE_ENV=production ./node_modules/.bin/esbuild ./resources/js/app.js --bundle --outfile=./assets/js/app.js --minify",
+		"dev:css-normalizer": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/wordpress-normalizer.css -o ./assets/css/wordpress-normalizer.css --postcss",
+		"dev:css-app": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/app.css -o ./assets/css/app.css --postcss",
+		"dev:js": "cross-env NODE_ENV=development ./node_modules/.bin/esbuild ./resources/js/app.js --bundle --outfile=./assets/js/app.js",
+		"watch:css-normalizer": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/wordpress-normalizer.css -o ./assets/css/wordpress-normalizer.css --postcss --watch",
+		"watch:css-app": "cross-env NODE_ENV=development tailwindcss -i ./resources/css/app.css -o ./assets/css/app.css --postcss --watch",
+		"watch:js": "cross-env NODE_ENV=development ./node_modules/.bin/esbuild ./resources/js/app.js --bundle --outfile=./assets/js/app.js --watch",
+		"html-includes": "cross-env NODE_ENV=development grunt processhtml",
+		"watch:html-includes": "cross-env NODE_ENV=development grunt watch",
+		"production": "cross-env NODE_ENV=production concurrently \"npm run production:css-normalizer\" \"npm run production:css-app\" \"npm run production:js\" \"npm run html-includes\"",
+		"dev": "cross-env NODE_ENV=development concurrently \"npm run dev:css-app\" \"npm run dev:css-normalizer\"  \"npm run dev:js\" \"npm run html-includes\"",
+		"watch": "cross-env NODE_ENV=development concurrently \"npm run watch:css-normalizer\" \"npm run watch:css-app\"  \"npm run watch:js\" \"npm run watch:html-includes\"",
+		"browser-sync": "cross-env NODE_ENV=development browser-sync start --config browsersync-config.js",
+		"watch-sync": "cross-env NODE_ENV=development concurrently \"npm run browser-sync\" \"npm run watch\""
+	},
+	"devDependencies": {
+		"@webfalconwordpress/tailwindcss-falcon-tailwind-plugin": "1.0.0",
+		"autoprefixer": "^10.4.17",
+		"browser-sync": "^2.29.3",
+		"concurrently": "^6.2.1",
+		"cross-env": "^7.0.3",
+		"esbuild": "^0.19.5",
+		"grunt": "^1.6.1",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-processhtml": "^0.4.4",
+		"postcss": "^8.4.33",
+		"postcss-import": "^15.1.0",
+		"postcss-nested": "^6.0.1",
+		"postcss-nested-ancestors": "^3.0.0",
+		"resolve-url-loader": "^5.0.0",
+		"tailwindcss": "^3.4.1"
+	},
+	"dependencies": {
+		"flowbite": "^1.8.1"
+	}
+}

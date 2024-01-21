@@ -1,0 +1,18 @@
+@import "wordpress-normalizer.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "patterns.css";
+@import "block-styles/buttons.css";
+
+
+.wp-block{
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=wide] {
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=full] {
+    @apply max-w-full;
+}
