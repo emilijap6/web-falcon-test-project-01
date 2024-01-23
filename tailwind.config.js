@@ -22,6 +22,8 @@ module.exports = {
             'base-2': '#FFFFFF',       // Base Two
             contrast: {
                 DEFAULT: '#121212',       // Contrast
+                2: '#1A56DB',       // Contrast / Two
+                3: '#0FA8DA',       // Contrast / Three
             },
             accent: {
                 DEFAULT: '#808080',       // Accent
