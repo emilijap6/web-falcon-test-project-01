@@ -438,8 +438,20 @@ input[type="range"]::-ms-fill-lower {
   position: relative;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .inline {
@@ -478,6 +490,14 @@ input[type="range"]::-ms-fill-lower {
   width: 16rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -498,6 +518,18 @@ input[type="range"]::-ms-fill-lower {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -512,17 +544,13 @@ input[type="range"]::-ms-fill-lower {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-solid {
   border-style: solid;
 }
 
-.border-sky-500 {
+.border-contrast {
   --tw-border-opacity: 1;
-  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+  border-color: rgb(18 18 18 / var(--tw-border-opacity));
 }
 
 .bg-base-1 {
@@ -550,6 +578,33 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(205 219 254 / var(--tw-bg-opacity));
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -562,14 +617,39 @@ input[type="range"]::-ms-fill-lower {
   line-height: 2.25rem;
 }
 
+.text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(128 128 128 / var(--tw-text-opacity));
+}
+
+.text-contrast {
+  --tw-text-opacity: 1;
+  color: rgb(18 18 18 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
+}
+
+.no-underline {
+  text-decoration-line: none;
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000000;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .outline {
@@ -670,8 +750,8 @@ html, body {
 
 .absoluteCenter {
   /* Must manually set width/height */
-  width:800px;
-  height:500px;
+  width:335px;
+  height:455px;
   /* The magic centering code */
   margin:auto;
   position:absolute;
@@ -684,7 +764,10 @@ html, body {
   /* Prevent div from overflowing main window */
   max-width:100%;
   max-height:100%;
-  overflow:auto;
+}
+
+.articleShadow {
+  box-shadow: 0.5rem 0.5rem #121212, 0rem 0rem;
 }
 
 /* These buttons are Style Variations definded ind editor-styles.js */
@@ -839,4 +922,9 @@ html, body {
 .footer.darker .site-title {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-base-1:hover {
+  --tw-text-opacity: 1;
+  color: rgb(244 208 78 / var(--tw-text-opacity));
 }
