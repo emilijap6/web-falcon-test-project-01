@@ -1,42 +1,29 @@
-/* @font-face {
-  font-family: 'Figtree';
+@font-face {
+  font-family: Figtree;
+  font-style: normal;
+  font-display: fallback;
+  src: url('../fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Figtree;
+  font-style: italic;
+  font-display: fallback;
+  src: url('../fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Figtree;
   font-style: normal;
   font-weight: 600;
   font-display: fallback;
-  src: url('../assets/fonts/Figtree-SemiBold.ttf') format('truetype');
+  src: url('../fonts/Figtree-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Figtree';
+  font-family: Figtree;
   font-style: normal;
   font-weight: 800;
   font-display: fallback;
-  src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
-} */
-
-@font-face {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/figtree/v5/_Xms-HUzqDCFdgfMm4q9DbZs.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/figtree/v5/_Xms-HUzqDCFdgfMm4q9DbZs.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: 'Figtree';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/figtree/v5/_Xms-HUzqDCFdgfMm4q9DbZs.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url('../fonts/Figtree-ExtraBold.ttf') format('truetype');
 }

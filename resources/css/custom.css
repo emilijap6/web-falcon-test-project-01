@@ -8,6 +8,7 @@ main {
 
 html, body {
     height: 100%;
+    font-family: Figtree;
 }
 
 /* 
@@ -37,4 +38,12 @@ html, body {
 
    .articleShadow {
     box-shadow: 0.5rem 0.5rem #121212, 0rem 0rem;
+   }
+
+   .tagLearning, .authorName {
+    font-weight: 800;
+   }
+
+   .publishDate, .cardDescription{
+    font-weight: 600;
    }
